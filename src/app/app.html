@@ -1,0 +1,20 @@
+<!-- <ion-nav [root]="rootPage"></ion-nav>
+ -->
+
+  <ion-menu [content]="content">
+  <ion-content class="menu-content">
+    <div class="profile-pic">
+      <img src="img/Profile-Mystic-01.png">
+      <h1> Sam Wise </h1>
+    </div>
+    <ion-list class="menu-list">
+      <button ion-item detail-none *ngFor="let page of pages" (click)=pushPage(page)>
+        <ion-icon *ngIf="page.icon" name="{{page.icon}}" item-center class="icons-go-left"></ion-icon>
+        {{page.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>
