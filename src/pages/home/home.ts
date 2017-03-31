@@ -7,6 +7,7 @@ import { NavController}from 'ionic-angular';
 import {MapPage} from '../map/map';
 import {HeroesPage} from '../heroes/heroes';
 import {StatsPage} from '../stats/stats';
+import {FaqPage} from '../faq/faq';
 
 @Component({
   selector: 'page-home',
@@ -18,9 +19,9 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
     this.navPages = [
-      { title: 'Heroes', icon: 'center', path: 'img/Timeline_Stretched.svg', component: HeroesPage },
-      { title: 'Map', icon: 'center', path: 'img/CheckIn.svg', component: MapPage },
-      { title: 'Statistics', icon: 'center', path: 'img/Adventure_Stretched.svg', component: StatsPage }
+      { title: 'Heroes', icon: 'center', path: 'img/TImeline_Stretched-01.png', component: HeroesPage },
+      { title: 'Map', icon: 'center', path: 'img/CheckIn-02.svg', component: MapPage },
+      { title: 'Statistics', icon: 'center', path: 'img/Adventure_Stretched.svg', component: FaqPage }
     ];
 
   }
